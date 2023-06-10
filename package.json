@@ -3,8 +3,16 @@
   "name": "typescript-to-javascript",
   "title": "TypeScript to JavaScript",
   "description": "Strips TypeScript code of types to be easily pluggable to a JavaScript REPL etc.",
-  "icon": "command-icon.png",
+  "icon": "icon.png",
   "author": "bengry",
+  "access": "private",
+  "owner": "wiz-io",
+  "keywords": [
+    "typescript",
+    "javascript",
+    "ts",
+    "js"
+  ],
   "categories": [
     "Developer Tools"
   ],
@@ -24,13 +32,15 @@
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.53.2",
-    "esbuild": "^0.18.0"
+    "@babel/core": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@raycast/api": "^1.53.2"
   },
   "devDependencies": {
     "@raycast/eslint-config": "1.0.6",
     "@tsconfig/node18": "^2.0.1",
     "@tsconfig/recommended": "^1.0.2",
+    "@types/babel__core": "^7.20.1",
     "@types/node": "^18.16.17",
     "@types/react": "18.2.10",
     "eslint": "^8.42.0",
@@ -43,6 +53,5 @@
     "fix-lint": "ray lint --fix",
     "lint": "ray lint",
     "publish": "npx @raycast/api@latest publish"
-  },
-  "packageManager": "yarn@3.6.0"
+  }
 }

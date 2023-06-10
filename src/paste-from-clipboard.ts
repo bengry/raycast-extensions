@@ -8,12 +8,7 @@ export default async function main() {
     return;
   }
 
-  const { code: javascriptCode, warnings } = await covertTypeScriptToJavaScript(typescriptCode);
-
-  if (warnings.length > 0) {
-    await showHUD(JSON.stringify(warnings, null, 2));
-    return;
-  }
+  const javascriptCode = await covertTypeScriptToJavaScript(typescriptCode);
 
   await Clipboard.paste(javascriptCode);
 }

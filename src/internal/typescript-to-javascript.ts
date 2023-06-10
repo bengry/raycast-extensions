@@ -1,12 +1,15 @@
-import esbuild from "esbuild";
+import * as babel from "@babel/core";
+import presetTypescript from "@babel/preset-typescript";
 
 export async function covertTypeScriptToJavaScript(typescriptCode: string) {
-  const { code, warnings } = await esbuild.transform(typescriptCode, {
-    loader: "tsx",
+  const output = babel.transform(typescriptCode, {
+    filename: "clipboard.ts",
+    presets: [presetTypescript],
   });
 
-  return {
-    code,
-    warnings,
-  };
+  if (!output?.code) {
+    throw new Error("Failed to transform TypeScript to JavaScript");
+  }
+
+  return output.code;
 }
