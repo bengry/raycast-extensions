@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "typescript-to-javascript",
-  "title": "TypeScript to JavaScript",
+  "name": "convert-typescript-to-javascript",
+  "title": "Convert TypeScript to JavaScript",
   "description": "Strips TypeScript code of types to be easily pluggable to a JavaScript REPL etc.",
   "icon": "icon.png",
   "author": "bengry",
@@ -34,16 +34,16 @@
   "dependencies": {
     "@babel/core": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
-    "@raycast/api": "^1.53.2"
+    "@raycast/api": "^1.54.1"
   },
   "devDependencies": {
     "@raycast/eslint-config": "1.0.6",
     "@tsconfig/node18": "^2.0.1",
     "@tsconfig/recommended": "^1.0.2",
     "@types/babel__core": "^7.20.1",
-    "@types/node": "^18.16.17",
-    "@types/react": "18.2.10",
-    "eslint": "^8.42.0",
+    "@types/node": "^20.3.1",
+    "@types/react": "18.2.14",
+    "eslint": "^8.43.0",
     "prettier": "^2.8.8",
     "typescript": "^5.1.3"
   },

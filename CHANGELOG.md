@@ -1,3 +1,3 @@
-# TypeScript to JavaScript Changelog
+# Convert TypeScript to JavaScript Changelog
 
-## [Initial Version] - 2023-06-10
+## [Initial Version] - 2023-06-26
