@@ -5,8 +5,7 @@
   "description": "Strips TypeScript code of types to be easily pluggable to a JavaScript REPL etc.",
   "icon": "icon.png",
   "author": "bengry",
-  "access": "private",
-  "owner": "wiz-io",
+  "access": "public",
   "keywords": [
     "typescript",
     "javascript",
